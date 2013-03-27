@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
+gem 'omniauth-singly'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -10,6 +12,8 @@ group :production do
 end
 
 group :development, :test do
+  gem 'cucumber'
+  gem 'rspec-rails'
   gem 'sqlite3'
 end
 
