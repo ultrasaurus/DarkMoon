@@ -49,7 +49,10 @@ DarkMoon::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
-
+  get "/applications" => "home#applications"
+  get "/connect" => "home#connect"
+  get "/auth/singly/callback" => "home#callback"
+  get "/auth/disconnect" => "home#disconnect"
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

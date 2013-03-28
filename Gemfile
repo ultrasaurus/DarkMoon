@@ -16,6 +16,7 @@ group :development do
 end 
 
 group :test do
+  gem 'rr'
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'rspec-rails'
