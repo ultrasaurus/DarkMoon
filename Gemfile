@@ -11,8 +11,13 @@ group :production do
   gem 'pg'
 end
 
-group :development, :test do
-  gem 'cucumber'
+group :development do
+  gem 'sqlite3'
+end 
+
+group :test do
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
   gem 'rspec-rails'
   gem 'sqlite3'
 end
