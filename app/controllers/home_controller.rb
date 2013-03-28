@@ -35,7 +35,7 @@ class HomeController < ApplicationController
   end
   
   def disconnect
-    session.clear
+    reset_session
     redirect_to '/'
   end
   
