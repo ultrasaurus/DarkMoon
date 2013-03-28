@@ -1,4 +1,6 @@
 DarkMoon::Application.routes.draw do
+  post "app_versions/create"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
