@@ -4,9 +4,9 @@ gem 'rails', '3.2.13'
 
 gem 'omniauth-singly'
 gem 'mongoid'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'carrierwave'
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'mini_magick'
 
 group :production do
   gem 'pg'
