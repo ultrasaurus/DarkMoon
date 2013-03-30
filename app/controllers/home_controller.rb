@@ -41,5 +41,6 @@ class HomeController < ApplicationController
   
   # needs protection
   def applications
+    @app_versions = AppVersion.all
   end
 end

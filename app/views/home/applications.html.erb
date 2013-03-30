@@ -1,1 +1,7 @@
-<%= link_to 'disconnect from Github', '/auth/disconnect' %> 
+<%= link_to 'disconnect from Github', '/auth/disconnect' %>
+<h3>Current Apps available for testing</h3>
+<ul>
+  <% @app_versions.each do |app| %>
+    <li><%= app.title %></li>
+  <% end %>
+</ul>

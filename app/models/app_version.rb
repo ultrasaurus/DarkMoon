@@ -6,7 +6,9 @@ class AppVersion
   mount_uploader :icon, AppVersionUploader
 
   field :bundle_identifier
-  field :bundle_version
   field :title
   field :downloaded_at, type: DateTime
+  
+  validates_uniqueness_of :bundle_identifier, :file  #  file is not field - shim AppVersionUploader??
+  validates_presence_of :bundle_identifier
 end
